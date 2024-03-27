@@ -1,0 +1,268 @@
+$main_background: #1D1E22;
+
+
+.main-bg {
+  background: $main_background;
+  font-family: "Rubik", sans-serif;
+
+  .reg-head {
+    height: 128px;
+    display: flex;
+
+    .main_logo {
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .nav-custom {
+      margin-left: 20px;
+
+      .nav-custom-color {
+        color: white;
+      }
+
+      .btn-custom {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .btn-language-custom {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      @media (max-width: 584px) {
+        visibility: hidden;
+      }
+    }
+
+    .buttons {
+      @media (max-width: 584px) {
+        visibility: hidden;
+      }
+    }
+
+    .btn-log-in-custom {
+      width: 100px;
+      height: 49px;
+      background: linear-gradient(324.25deg, rgba(83, 95, 230, 0.84) 30.14%, rgba(32, 193, 207, 0.57) 89.37%);
+      border-radius: 30px 16px 16px 16px;
+      color: white;
+      font-size: 16px;
+
+    }
+
+    .btn-log-out-custom {
+      width: 98px;
+      height: 50px;
+      border-radius: 16px;
+      background-color: transparent;
+      border: solid 1px rgba(83, 95, 230, 0.84);
+      cursor: pointer;
+      color: rgba(83, 95, 230, 0.84);
+
+    }
+
+  }
+
+  .reg-body {
+    display: flex;
+    align-items: center;
+
+    .tab-head {
+      @media (max-width: 1080px) {
+        margin-top: 400px;
+        margin-left: 0;
+
+      }
+
+      .cript-money {
+        max-width: 640px;
+        margin-left: 32px;
+
+        .cript-money-1 {
+          width: 160px;
+          border-radius: 16px;
+          background-color: transparent;
+          border: solid 1px rgba(83, 95, 230, 0.84);
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          gap: 10px
+        }
+      }
+
+      .form-check-custom {
+        margin-left: 32px;
+        margin-top: 44px;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      .btn-primary-custom {
+        width: 252px;
+        height: 64px;
+        border-radius: 20px;
+        background: #535FE6;
+        margin-left: 32px;
+        margin-top: 58px;
+        margin-bottom: 200px;
+      }
+    }
+
+    .tab_corner {
+      margin-top: 99px;
+    }
+
+    .tab_title {
+      margin-left: 27px;
+      color: white;
+    }
+
+    .tab_description {
+      margin-left: 32px;
+      margin-top: 5px;
+      font-size: 16px;
+      color: #5E647A;
+    }
+
+    .user_data {
+      display: flex;
+      color: white;
+      align-items: center;
+      margin-left: 32px;
+      gap: 10px;
+
+      .custom {
+        background-color: transparent;
+        border: 1px solid #535FE6;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 230px;
+        height: 56px;
+        color: white;
+
+      }
+
+    }
+
+    .password {
+      display: flex;
+      color: white;
+      align-items: center;
+      margin-left: 32px;
+      gap: 10px;
+
+      .custom-pass {
+        background-color: transparent;
+        border: 1px solid #535FE6;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 230px;
+        height: 56px;
+        color: white;
+      }
+    }
+
+    .wallets {
+      color: white;
+      margin-left: 32px;
+    }
+
+    .input_wallet-form {
+      margin-top: -377px;
+      margin-left: 86px;
+      width: 350px;
+      height: 400px;
+      background-image: url('../css/image/Rectangle 238.svg'), url('../css/image/image 2.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 60px 20px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      @media (max-width: 1080px) {
+        margin-top: -696px;
+        margin-left: -414px;
+      }
+      @media (max-width: 767px) {
+        margin-top: -790px;
+        margin-left: -316px;
+
+      }
+      @media (max-width: 584px) {
+        margin-top: -916px;
+        margin-left: -228px;
+
+      }
+      @media (max-width: 380px) {
+        margin-top: -970px;
+        margin-left: -217px;
+
+      }
+
+      .wallet-form {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 230px;
+        height: 56px;
+        color: white;
+      }
+
+      .wallet-form::placeholder {
+        color: white;
+      }
+
+      .btn-dark-custom {
+        border-radius: 1000px;
+        width: 184px;
+        height: 56px;
+        cursor: pointer;
+      }
+
+      .Veldt {
+        font-size: 12px;
+        margin-top: 50px;
+        font-weight: 300;
+      }
+
+    }
+
+  }
+}
+
+.footer-bg {
+  background: #23252F;
+
+  .footer-custom {
+    height: 200px;
+
+    .foot_logo {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+  }
+}
+
+@media (max-width: 585px) {
+  .password {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 585px) {
+  .user_data {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
